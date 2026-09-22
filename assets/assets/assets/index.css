@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas-abyss: #080a10;
+  --color-surface-panel: #131926;
+  --color-surface: #0f131c;
+  --color-surface-dim: #0f131c;
+  --color-surface-bright: #353943;
+  --color-surface-container-lowest: #0a0e17;
+  --color-surface-container-low: #181b25;
+  --color-surface-container: #1c2029;
+  --color-surface-container-high: #262a34;
+  --color-surface-container-highest: #31353f;
+  --color-surface-variant: #31353f;
+  
+  --color-primary: #e0fdff;
+  --color-primary-container: #00f2fe;
+  --color-primary-fixed: #6ff6ff;
+  --color-primary-fixed-dim: #00dce6;
+
+  --color-secondary: #e0b6ff;
+  --color-secondary-container: #6d11ad;
+  --color-secondary-fixed: #f2daff;
+  --color-secondary-fixed-dim: #e0b6ff;
+  --color-on-secondary-container: #d7a4ff;
+
+  --color-tertiary: #e1ffec;
+  --color-tertiary-container: #67f4b7;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-tertiary-fixed-dim: #4edea3;
+
+  --color-neon-amber: #f59e0b;
+  --color-vu-meter-red: #ef4444;
+  --color-suno-core: #df562c;
+  --color-suno-warm: #d99b26;
+
+  --color-border-hairline: #1e2638;
+  --color-border-active: #2f3d58;
+  --color-outline: #849495;
+  --color-outline-variant: #3a494b;
+  --color-on-surface: #dfe2ef;
+  --color-on-surface-variant: #b9cacb;
+
+  --font-display-hero: "Space Grotesk", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-headline-sm: "Space Grotesk", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-meter-readout: "JetBrains Mono", monospace;
+  --font-param-label: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    overscroll-behavior: none;
+    font-family: var(--font-body-md);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080a10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f3d58;
+}
